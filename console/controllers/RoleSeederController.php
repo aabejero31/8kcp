@@ -5,7 +5,7 @@ namespace console\controllers;
 use yii\console\Controller;
 use console\seeders\RoleSeeder;
  
-class RoleSeedController extends Controller
+class RoleSeederController extends Controller
 {
     public function actionRole()
     {

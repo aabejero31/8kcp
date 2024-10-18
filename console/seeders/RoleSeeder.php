@@ -12,12 +12,12 @@ class RoleSeeder extends Migration
 
         $this->batchInsert(
             'user_roles', 
-            ['name'],
+            ['id', 'name'],
             [
-                ['master'],
-                ['distributor'],
-                ['client'],
-                ['test-taker']
+                [1, 'master'],
+                [2, 'distributor'],
+                [3, 'client'],
+                [4, 'test-taker']
             ]);
     }
  
