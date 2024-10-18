@@ -55,6 +55,7 @@ class SignupForm extends Model
         $user->setPassword($this->password);
         $user->generateAuthKey();
         $user->generateEmailVerificationToken();
+        $user->role_id = 4;
 
         return $user->save() && $this->sendEmail($user);
     }
